@@ -1,0 +1,17 @@
+D:\repos\pk111\bin\Debug\net6.0-windows\pk111.exe
+D:\repos\pk111\bin\Debug\net6.0-windows\pk111.deps.json
+D:\repos\pk111\bin\Debug\net6.0-windows\pk111.runtimeconfig.json
+D:\repos\pk111\bin\Debug\net6.0-windows\pk111.dll
+D:\repos\pk111\bin\Debug\net6.0-windows\pk111.pdb
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.csproj.AssemblyReference.cache
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.Form1.resources
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.csproj.GenerateResource.cache
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.AssemblyInfoInputs.cache
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.AssemblyInfo.cs
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.csproj.CoreCompileInputs.cache
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.dll
+D:\repos\pk111\obj\Debug\net6.0-windows\refint\pk111.dll
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.pdb
+D:\repos\pk111\obj\Debug\net6.0-windows\pk111.genruntimeconfig.cache
+D:\repos\pk111\obj\Debug\net6.0-windows\ref\pk111.dll
