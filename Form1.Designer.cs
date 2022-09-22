@@ -75,12 +75,14 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(110, 131);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 78);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "CE";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -103,12 +105,13 @@
             // 
             // button6
             // 
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button6.Location = new System.Drawing.Point(110, 215);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(92, 78);
             this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -121,12 +124,14 @@
             // 
             // button8
             // 
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button8.Location = new System.Drawing.Point(12, 215);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(92, 78);
             this.button8.TabIndex = 5;
-            this.button8.Text = "button8";
+            this.button8.Text = "1/x";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -276,12 +281,14 @@
             // 
             // button23
             // 
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button23.Location = new System.Drawing.Point(208, 551);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(92, 78);
             this.button23.TabIndex = 22;
-            this.button23.Text = "button23";
+            this.button23.Text = ",";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button20_Click);
             // 
             // button24
             // 
