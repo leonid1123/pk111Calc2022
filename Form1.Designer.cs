@@ -86,6 +86,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Roboto", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(306, 131);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 78);
@@ -96,12 +97,14 @@
             // 
             // button5
             // 
+            this.button5.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(306, 215);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(92, 78);
             this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
+            this.button5.Text = "/";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -115,12 +118,14 @@
             // 
             // button7
             // 
+            this.button7.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button7.Location = new System.Drawing.Point(208, 215);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(92, 78);
             this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
+            this.button7.Text = "√x";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -135,12 +140,14 @@
             // 
             // button9
             // 
+            this.button9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.Location = new System.Drawing.Point(306, 299);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(92, 78);
             this.button9.TabIndex = 12;
-            this.button9.Text = "button9";
+            this.button9.Text = "*";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -177,12 +184,14 @@
             // 
             // button13
             // 
+            this.button13.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button13.Location = new System.Drawing.Point(306, 383);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(92, 78);
             this.button13.TabIndex = 16;
-            this.button13.Text = "button13";
+            this.button13.Text = "-";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -219,12 +228,14 @@
             // 
             // button17
             // 
+            this.button17.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button17.Location = new System.Drawing.Point(304, 467);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(92, 78);
             this.button17.TabIndex = 20;
-            this.button17.Text = "button17";
+            this.button17.Text = "+";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -261,12 +272,14 @@
             // 
             // button21
             // 
+            this.button21.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button21.Location = new System.Drawing.Point(306, 551);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(92, 78);
             this.button21.TabIndex = 24;
-            this.button21.Text = "button21";
+            this.button21.Text = "=";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 

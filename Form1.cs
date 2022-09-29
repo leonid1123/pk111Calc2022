@@ -2,7 +2,10 @@ namespace pk111
 {
     public partial class Form1 : Form
     {
-        public int by = 12;
+        public double fnum;
+        public double snum;
+        public string deystvie = "";
+        public bool clear = false;
         public Form1()
         {
             InitializeComponent();
@@ -10,6 +13,12 @@ namespace pk111
 
         private void button20_Click(object sender, EventArgs e)
         { //переписать по нормальному
+            //кнопки с цифрами
+            if (clear)
+            {
+                textBox1.Clear();
+                clear = false;
+            }
             var a = (Button)sender;
             if (a.Text == ",")
             {
@@ -82,6 +91,74 @@ namespace pk111
                 x *= -1;
                 textBox1.Text = x.ToString();
             }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {//квадратный корень
+            double x = double.Parse(textBox1.Text);
+            if (x > 0)
+            {
+                x = Math.Sqrt(x);
+                textBox1.Text = x.ToString();
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {//сложение
+            fnum = double.Parse(textBox1.Text);
+            deystvie = "+";
+            clear = true;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {//равно
+            snum = double.Parse(textBox1.Text);
+            double res;
+            switch (deystvie)
+            {
+                case "+":
+                    res = fnum + snum;
+                    break;
+                case "-":
+                    res = fnum - snum;
+                    break;
+                case "*":
+                    res = fnum * snum;
+                    break;
+                case "/":
+                    res = fnum / snum;
+                    break;
+                default:
+                    res = double.NaN;
+                    break;
+            }
+
+            textBox1.Text = res.ToString();
+            fnum = double.NaN;
+            snum = double.NaN;
+            deystvie = "";
+            clear = true;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {//минус
+            fnum = double.Parse(textBox1.Text);
+            deystvie = "-";
+            clear = true;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {//умножить
+            fnum = double.Parse(textBox1.Text);
+            deystvie = "*";
+            clear = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {//деление
+            fnum = double.Parse(textBox1.Text);
+            deystvie = "/";
+            clear = true;
         }
     }
 }
