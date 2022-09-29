@@ -292,12 +292,14 @@
             // 
             // button24
             // 
+            this.button24.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button24.Location = new System.Drawing.Point(12, 551);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(92, 78);
             this.button24.TabIndex = 21;
-            this.button24.Text = "button24";
+            this.button24.Text = "+/-";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // textBox1
             // 
