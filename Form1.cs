@@ -6,11 +6,52 @@ namespace pk111
         public double snum;
         public string deystvie = "";
         public bool clear = false;
+        int counter = 0;
         public Form1()
         {
             InitializeComponent();
         }
+        public void Deystvie(int _counter, Button button)
+        {
+            if (counter == 1)
+            {
+                fnum = double.Parse(textBox1.Text);
+                deystvie = button.Text;
+                
+                textBox2.Text = fnum.ToString() + deystvie;
+            }
 
+            if (counter > 1)
+            {
+                snum = double.Parse(textBox1.Text);
+                textBox1.Text = Sum(fnum, snum, deystvie).ToString();
+                fnum = Sum(fnum, snum, deystvie);
+                
+            }
+        }
+        public double Sum(double _fnum, double _snum, string _deystvie)
+        {
+            double res;
+            switch (_deystvie)
+            {
+                case "+":
+                    res = _fnum + _snum;
+                    break;
+                case "-":
+                    res = _fnum - _snum;
+                    break;
+                case "*":
+                    res = _fnum * _snum;
+                    break;
+                case "/":
+                    res = _fnum / _snum;
+                    break;
+                default:
+                    res = double.NaN;
+                    break;
+            }
+            return res;
+        }
         private void button20_Click(object sender, EventArgs e)
         { //переписать по нормальному
             //кнопки с цифрами
@@ -54,13 +95,14 @@ namespace pk111
             }
         }
         private void button4_Click(object sender, EventArgs e)
-        {
+        {//стереть символ
             string txt = textBox1.Text;
             textBox1.Text = txt.Substring(0, textBox1.Text.Length - 1);
             if (textBox1.Text.Length < 1)
             {
                 textBox1.Text = "0";
             }
+
         }
         private void button3_Click(object sender, EventArgs e)
         {//стереть всё
@@ -105,34 +147,32 @@ namespace pk111
 
         private void button17_Click(object sender, EventArgs e)
         {//сложение
-            fnum = double.Parse(textBox1.Text);
-            deystvie = "+";
+            counter++;
             clear = true;
+
+            if (counter == 1)
+            {
+                fnum = double.Parse(textBox1.Text);
+                deystvie = "+";
+                clear = true;
+                textBox2.Text = fnum.ToString() + deystvie;
+            }
+
+            if (counter > 1)
+            {
+                snum = double.Parse(textBox1.Text);
+                textBox1.Text = Sum(fnum, snum, deystvie).ToString();
+                fnum = Sum(fnum, snum, deystvie);
+                clear = true;
+            }
         }
 
         private void button21_Click(object sender, EventArgs e)
         {//равно
+            counter = 0;
             snum = double.Parse(textBox1.Text);
             double res;
-            switch (deystvie)
-            {
-                case "+":
-                    res = fnum + snum;
-                    break;
-                case "-":
-                    res = fnum - snum;
-                    break;
-                case "*":
-                    res = fnum * snum;
-                    break;
-                case "/":
-                    res = fnum / snum;
-                    break;
-                default:
-                    res = double.NaN;
-                    break;
-            }
-
+            res = Sum(fnum, snum, deystvie);
             textBox1.Text = res.ToString();
             fnum = double.NaN;
             snum = double.NaN;
@@ -145,6 +185,8 @@ namespace pk111
             fnum = double.Parse(textBox1.Text);
             deystvie = "-";
             clear = true;
+            textBox2.Text = fnum.ToString() + deystvie;
+            counter++;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -152,6 +194,8 @@ namespace pk111
             fnum = double.Parse(textBox1.Text);
             deystvie = "*";
             clear = true;
+            textBox2.Text = fnum.ToString() + deystvie;
+            counter++;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -159,6 +203,8 @@ namespace pk111
             fnum = double.Parse(textBox1.Text);
             deystvie = "/";
             clear = true;
+            textBox2.Text = fnum.ToString() + deystvie;
+            counter++;
         }
     }
 }
